@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Homepage{% endblock title %}
+
+{% block content %}
+    <br/>
+    <div class="jumbotron">
+        <h1 class="display-4">Hello</h1>
+        <p class="lead">Welcome to Sirojiddin Samadov's blog</p>
+        <hr class="my-4">
+        <p>Here you will stay updated with the latest news.</p>
+        <p class="lead">
+            <a class="btn btn-primary btn-lg" href="{% url 'article_list' %}" role="button">See posts</a>
+        </p>
+    </div>
+{% endblock content %}
